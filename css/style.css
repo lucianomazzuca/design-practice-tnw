@@ -1,0 +1,119 @@
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: white;
+  background-color: gray;
+}
+
+
+/* Header Section */
+
+.navbar-1 {
+  background-color: black;
+  height: 32px;
+}
+
+.navbar-2 {
+  background-color: royalblue;
+  height: 48px;
+}
+
+/* Cover Section */
+
+.cover {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+
+  background-color: firebrick;
+  height: 560px;
+}
+
+.cover article {
+
+
+  background-color: green;
+}
+
+.cover .article-1 {
+  grid-row: 1 / span 2;
+}
+
+/* News Section */
+.news {
+
+
+  background-color: indigo;
+}
+
+/* Funding section*/
+
+.funding {
+
+  background-color: teal;
+}
+
+
+/* Categories Section*/
+
+.categories {
+
+  background-color: brown;
+}
+
+
+/* Deals section*/
+.deals {
+  background-color: cadetblue;
+}
+
+.card {
+  background-color: indianred;
+  
+  height: 200px;
+}
+
+
+/* FOOTER */
+footer {
+  background-color: black;
+}
+
+footer.flex {
+  flex-direction: column;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-links .menu ul{
+  display: flex;
+}
+
+.footer-legal {
+  padding-bottom: 3em;
+}
+
+@media(max-width: 768px) {
+  body {
+    background-color: black;
+  }
+
+  main .auto-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* Utilities */
+
