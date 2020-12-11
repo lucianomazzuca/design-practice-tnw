@@ -70,6 +70,7 @@ header nav li:last-child {
   background-color: #fff;
   height: 48px;
   font-family: Shentox,sans-serif;
+  padding-right: 0;
 }
 
 .navbar-2 a {
@@ -115,6 +116,7 @@ header nav li:last-child {
 .btn-burger {
   color: orange;
   padding-right: 0;
+  display: none;
 }
 
 /* ==============
@@ -162,7 +164,6 @@ header nav li:last-child {
 
 .img-card {
   width: 100%;
-  height: 100%;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -251,15 +252,128 @@ header nav li:last-child {
 
 .funding {
 
-  background-color: teal;
+}
+
+.funding-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.funding-header .more ul {
+  color: orangered;
+  font-size: 15px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding-bottom: 2rem;
+  height: 100%;
+}
+
+.funding-header .more li {
+  border-right: 1px solid;
+  padding: 0 10px;
+}
+
+.funding-header .more li:last-child {
+  border-right: none;
+  padding-right: 0;
+}
+
+.fund-card {
+  background-color: #FFFAF8;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.fund-card .head h4 {
+  font-size: 18px;
+}
+
+.fund-card .head h5 {
+  font-size: 11px;
+}
+
+.fund-card .head > * {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.fund-card .head .title {
+  padding: 10px;
+  background-color: orangered;
+}
+
+.fund-card .head .price {
+  background-color: #FFEBE7;
+  color: black;
+  padding: 10px;
+}
+
+.fund-card img {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.fund-card .story,
+.fund-card .byline {
+  color: #555555;
+  padding: 15px;
+}
+
+.fund-card .story div:first-child{
+  margin-bottom: 10px;
+}
+
+.fund-card .byline {
+  border-top: 1px solid #ffb395;
+  line-height: 1.9;
+  font-size: 12px;
+}
+
+.fund-card .byline p {
+  color: rgba(0, 0, 0, 0.5);
 }
 
 
-/* Categories Section*/
+/*
+ =================
+
+  Categories Section
+
+ ==================
+*/
 
 .categories {
 
-  background-color: brown;
+  background-color: indigo;
+}
+
+.categories .auto-grid {
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+.category-card {
+  border: 3px solid black;
+}
+
+.category-card .header h2 {
+  padding-bottom: 1rem;
+}
+
+.category-card .img-card {
+  min-height: 200px;
+}
+
+.category-card .img-card h2{
+  color: white;
+  font-size: 20px;
+  padding-bottom: 0;
 }
 
 
@@ -310,6 +424,10 @@ footer.flex {
     display: block;
   }
 
+  .btn-burger {
+    display: flex;
+  }
+
   /* Cover */
   .cover {
     grid-template-columns: 1fr;
@@ -323,6 +441,11 @@ footer.flex {
 
   .article-1 .card-content h2{
     font-size: 25px;
+  }
+
+  /* Funding section*/
+  .funding-header {
+    flex-direction: column;
   }
 }
 
