@@ -18,7 +18,12 @@ a {
   text-decoration: none;
 }
 
-/* Header Section */
+/* ==============
+
+  Header Section 
+
+  ================
+*/
 header a {
   color: hsla(0,0%,100%,.6);
 }
@@ -112,7 +117,12 @@ header nav li:last-child {
   padding-right: 0;
 }
 
-/* Cover Section */
+/* ==============
+
+  Cover Section 
+  
+  ================
+*/
 
 .cover {
   padding: 10px;
@@ -121,21 +131,87 @@ header nav li:last-child {
   grid-template-rows: 1fr 1fr;
   gap: 10px;
 
-  background-color: firebrick;
   height: 560px;
 }
 
 .cover article {
-
+  overflow: hidden;
 
   background-color: green;
 }
 
-.cover .article-1 {
+.article-1 {
   grid-row: 1 / span 2;
+  position: relative;
+  background-image: url(/images/cover-1.jpg);
 }
 
-/* News Section */
+.article-1 .card-content h2{
+  font-size: 40px;
+}
+
+.article-2 {
+  background-image: url(/images/cover-2.png);
+
+}
+
+.article-3 {
+  background-image: url(/images/cover-3.png);
+
+}
+
+.img-card {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+
+.card-content {
+  position: relative;
+  z-index: 100;
+
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: flex-end;
+  padding: 15px 10px;
+}
+
+.card-content h2{
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.card-content p{
+  color: gray;
+}
+
+.red-gradient {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(255,35,35,0.6474964985994398) 0%, rgba(7,2,2,1) 100%);
+  position: absolute;
+  top: 0;
+}
+
+.dark-gradient {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(0deg, rgba(0,0,0,1) 14%, rgba(255,255,255,0) 100%);
+  position: absolute;
+  top: 0;
+}
+
+
+/* ==============
+
+  News Section 
+  
+  ================
+*/
 .news {
 
 
@@ -193,9 +269,6 @@ footer.flex {
 }
 
 @media(max-width: 768px) {
-  body {
-    background-color: black;
-  }
 
   main .auto-grid {
     grid-template-columns: 1fr;
@@ -212,6 +285,21 @@ footer.flex {
 
   .logo-container {
     display: block;
+  }
+
+  /* Cover */
+  .cover {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+
+  }
+
+  .cover .article-1 {
+    grid-row: 1 / 1;
+  }
+
+  .article-1 .card-content h2{
+    font-size: 25px;
   }
 }
 
