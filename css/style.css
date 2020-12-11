@@ -8,7 +8,7 @@
 
 body {
   color: white;
-  background-color: gray;
+  background-color: rgba(0, 0, 0, 0.03);
   font-family: ARS Maquette,Helvetica Neue,Arial,sans-serif;
   font-size: 14px;
 }
@@ -212,10 +212,39 @@ header nav li:last-child {
   
   ================
 */
+
+.container h2 {
+  font-size: 28px;
+  color: orangered;
+}
+
 .news {
+  color: black;
+}
 
+.card {
+  display: flex;
+  flex-direction: column;
+}
 
-  background-color: indigo;
+.card > * {
+  margin-bottom: 10px;
+}
+
+.card img {
+  width: 100%;
+  height: 150px;
+  flex: 2;
+}
+
+.card h2 {
+  flex: 1;
+}
+
+.card p {
+  flex: 1;
+  font-size: 13px;
+  color: grey;
 }
 
 /* Funding section*/
@@ -237,12 +266,6 @@ header nav li:last-child {
 /* Deals section*/
 .deals {
   background-color: cadetblue;
-}
-
-.card {
-  background-color: indianred;
-  
-  height: 200px;
 }
 
 
