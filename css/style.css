@@ -351,7 +351,6 @@ header nav li:last-child {
 
 .categories {
 
-  background-color: indigo;
 }
 
 .categories .auto-grid {
@@ -359,7 +358,7 @@ header nav li:last-child {
 }
 
 .category-card {
-  border: 3px solid black;
+
 }
 
 .category-card .header h2 {
@@ -367,13 +366,53 @@ header nav li:last-child {
 }
 
 .category-card .img-card {
-  min-height: 200px;
+  height: 300px;
+}
+
+.category-card .img-card img {
+  display: block;
 }
 
 .category-card .img-card h2{
   color: white;
   font-size: 20px;
   padding-bottom: 0;
+}
+
+.latest-card {
+  display: flex;
+  height: 100px;
+  background-color: #FFEBE7;
+  color: orangered;
+}
+
+.latest-card .text{
+  padding: 15px;
+  flex: 3;
+}
+
+.latest-card .text h5 {
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+.img-container {
+  flex: 1;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.news-list {
+  list-style: circle;
+  padding: 0px 15px;
+  color: #555555;
+  font-size: 13px;
+}
+
+.news-list li {
+  padding: 10px 0;
+  border-bottom: 1px solid lightgray;
 }
 
 
