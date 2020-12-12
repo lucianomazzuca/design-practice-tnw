@@ -147,22 +147,13 @@ header nav li:last-child {
 .article-1 {
   grid-row: 1 / span 2;
   position: relative;
-  background-image: url(/images/cover-1.jpg);
+  
 }
 
 .article-1 .card-content h2{
   font-size: 40px;
 }
 
-.article-2 {
-  background-image: url(/images/cover-2.png);
-
-}
-
-.article-3 {
-  background-image: url(/images/cover-3.png);
-
-}
 
 .img-card {
   width: 100%;
