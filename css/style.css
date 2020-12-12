@@ -11,6 +11,8 @@ body {
   background-color: rgba(0, 0, 0, 0.03);
   font-family: ARS Maquette,Helvetica Neue,Arial,sans-serif;
   font-size: 14px;
+  position: relative;
+  z-index: 1000;
 }
 
 a {
@@ -416,11 +418,61 @@ header nav li:last-child {
 }
 
 
-/* Deals section*/
+/* 
+==============
+
+  Deals section
+
+=============
+*/
+
 .deals {
-  background-color: cadetblue;
+  
 }
 
+.deal-card {
+  position: relative;
+}
+
+.deal-card .img-container {
+  height: 200px;
+}
+
+.deal-card h4 {
+  border-top: 1px solid black;
+  padding: 10px 0;
+  font-weight: 600;
+  color: black;
+  font-size: 16px;
+}
+
+.deal-card p {
+  color: #555555;
+  font-size: 16px;
+}
+
+.deal-card .original-price {
+  font-size: 14px;
+  text-decoration: line-through;
+}
+
+/* .deal-discount {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  overflow: hidden;
+  font-size: 18px;
+  font-weight: 600;
+  color: black;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100px;
+  height: 100px;
+  background-color: #FFCC00;
+  transform: rotate(45deg);
+  z-index: 50;
+} */
 
 /* FOOTER */
 footer {
