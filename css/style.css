@@ -474,7 +474,15 @@ header nav li:last-child {
   z-index: 50;
 } */
 
-/* FOOTER */
+
+/* 
+===========
+
+    FOOTER 
+
+============
+*/
+
 footer {
   background-color: black;
 }
@@ -488,12 +496,40 @@ footer.flex {
   flex-direction: column;
 }
 
-.footer-links .menu ul{
+.footer-links ul{
   display: flex;
+  list-style: none;
+}
+
+.footer-links li {
+  padding: 0 5px;
+}
+.footer-links .media {
+  font-size: 18px;
+}
+
+.media li {
+  height: 40px;
+  width: 40px;
+  margin: 0 10px;
+  background-color: #333333;
+  padding: 10px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.menu {
+  margin-top: 20px;
+  color: lightgray;
+  font-size: 13px;
+  display: flex;
+  justify-content: center;
 }
 
 .footer-legal {
   padding-bottom: 3em;
+  color: lightgray;
+  font-size: 13px;
 }
 
 @media(max-width: 768px) {
